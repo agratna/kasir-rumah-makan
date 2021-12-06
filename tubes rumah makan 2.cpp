@@ -12,9 +12,7 @@ main()
  char input_password[50];
  char username_pegawai[50];
  char password_pegawai[50];
- int compare(char str1[], char str2[]);
-
-
+ 
 printf("Daftar Nama Pegawai\n");
 printf("\t1. Ratna\n");
 printf("\t2. Shafara\n");
@@ -26,126 +24,19 @@ strcpy(password_pegawai, "pegawai1");
 strcpy(username_pegawai, "Shafara");
 strcpy(password_pegawai, "pegawai2");
 
- 		printf("\n username : ");
-		fgets(input_username_pegawai, 50, stdin);
-		printf("\n password :  ");
-		fgets(input_password, 50, stdin);
+	printf("Silahkan Login!\n");
 
-menu:
-  system("cls");
- printf("\t\tRumah Makan Rasha\n");
- printf("\tUntuk Orang-Orang Kelaparan\n");
- printf("==================================================\n");
- printf("\n Daftar Menu\n");
- printf("--------------------------------------------------\n");
- printf("Menu Makanan   Harga\n");
- printf("1. Ayam Goreng + Nasi  Rp. 20.000\n");
- printf("2. Mie Goreng   Rp. 10.000\n");
- printf("3. Nasi Goreng   Rp. 10.000\n");
- printf("4. Tahu Tek   Rp. 8.000\n");
- printf("5. Capcay   Rp. 15.000\n");
+ 	printf("\n username : ");
+	fgets(input_username_pegawai, 50, stdin);
+	printf("\n password :  ");
+	fgets(input_password, 50, stdin);
+	
+	if(strcmp(username_pegawai, "Ratna") == 0 && strcmp(password_pegawai, "pegawai1") == 0){
+	if(strcmp(username_pegawai, "Shafara") == 0 && strcmp(password_pegawai, "pegawai2") == 0) {
+		
+	printf("Login Berhasil!\n\n");
+	
 
- printf("\n Masukan Kode Jenis Makanan [1/2/3/4/5] = ");scanf("%d", &pilih);
 
- switch(pilih){
 
-  case 1:
-   printf("\nMenu yang dipilih adalah Ayam Goreng + Nasi\n");
-   printf("Pesan Berapa Banyak   = ");scanf("%d", &banyak_pembelian);
-   total_harga=20000*banyak_pembelian;
-   printf("Total Yang Harus dibayar   = Rp. %.0f", total_harga);
-   printf("\ndibayar    = Rp. ");scanf("%f", &pembayaran);
-   if (total_harga<=pembayaran){
-    kembali=pembayaran-total_harga;
-    printf("Kembali    = Rp. %.0f", kembali);
-   }
-   else if(total_harga>=pembayaran){
-    kurang=total_harga-pembayaran;
-    printf("uang Anda Kurang   = Rp. %.0f", kurang);
-   }getch();
-   printf("\n\nTerima Kasih telah Berbelanja");
-   break;
-
-  case 2:
-   printf("\nMenu yang dipilih adalah Mie Goreng\n");
-   printf("Pesan Berapa Banyak   = ");scanf("%d", &banyak_pembelian);
-   total_harga=10000*banyak_pembelian;
-   printf("Total Yang Harus dibayar  = Rp. %.0f", total_harga);
-   printf("\ndibayar    = Rp. ");scanf("%f", &pembayaran);
-   if (total_harga<=pembayaran){
-    kembali=pembayaran-total_harga;
-    printf("Kembali    = Rp. %.0f", kembali);
-   }
-   else if(total_harga>=pembayaran){
-    kurang=total_harga-pembayaran;
-    printf("uang Anda Kurang   = Rp. %.0f", kurang);
-   }getch();
-   printf("\n\nTerima Kasih telah Berbelanja");
-   break;
-
-  case 3:
-   printf("\nMenu yang dipilih adalah Nasi Goreng\n");
-   printf("Pesan Berapa Banyak   = ");scanf("%d", &banyak_pembelian);
-   total_harga=10000*banyak_pembelian;
-   printf("Total Yang Harus dibayar  = Rp. %.0f", total_harga);
-   printf("\ndibayar    = Rp. ");scanf("%f", &pembayaran);
-   if (total_harga<=pembayaran){
-    kembali=pembayaran-total_harga;
-    printf("Kembali    = Rp. %.0f", kembali);
-   }
-   else if(total_harga>=pembayaran){
-    kurang=total_harga-pembayaran;
-    printf("uang Anda Kurang  = Rp. %.0f", kurang);
-   }getch();
-   printf("\n\nTerima Kasih telah Berbelanja");
-   break;
-
-  case 4:
-   printf("\nMenu yang dipilih adalah Tahu Tek\n");
-   printf("Pesan Berapa Banyak   = ");scanf("%d", &banyak_pembelian);
-   total_harga=8000*banyak_pembelian;
-   printf("Total Yang Harus dibayar  = Rp. %.0f", total_harga);
-   printf("\ndibayar    = Rp. ");scanf("%f", &pembayaran);
-   if (total_harga<=pembayaran){
-    kembali=pembayaran-total_harga;
-    printf("Kembali    = Rp. %.0f", kembali);
-   }
-   else if(total_harga>=pembayaran){
-    kurang=total_harga-pembayaran;
-    printf("uang Anda Kurang  = Rp. %.0f", kurang);
-   }getch();
-   printf("\n\nTerima Kasih telah Berbelanja");
-   break;
-
- case 5:
- 	printf("\nMenu yang dipilih adalah Capcay\n");
- 	printf("Pesan Berapa Banyak  = "); scanf("%d", &banyak_pembelian);
- 	total_harga=15000*banyak_pembelian;
- 	printf("Total Yang Harus dibayar = Rp. %.0f", total_harga);
- 	printf("\ndibayar   = Rp. ");scanf("%f", &pembayaran);
- 	if (total_harga<=pembayaran){
- 		kembali=pembayaran-total_harga;
- 		printf("Kembali  = Rp. %.0f", kembali);
-	 }
-	 else if(total_harga>=pembayaran){
-	 	kurang=total_harga-pembayaran;
-	 	printf("uang Anda Kurang  = Rp. %.0f", kurang);
-	 	}getch();
-	 	printf("\n\nTerima Kasih telah Berbelanja");
-	 	break;
-
-  default:
-   printf("\nKode yang anda Masukan Salah\n");
-   printf("Apakah Anda Ingin Kemabali Ke Menu? (Y/T)");menu=getche();
-   if(menu=='Y'||menu=='y'){
-    goto menu;
-   }
-   else if (menu=='T'||menu=='t'){
-    goto exit;
-   }
-   exit:
-   printf("\n\nTerima Kasih telah Berbelanja");
-   break;
- }getch();
-
-}
+  
