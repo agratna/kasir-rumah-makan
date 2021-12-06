@@ -30,7 +30,8 @@ main()
     if(ulang<3){
         printf("\n              Anda telah berhasil login.");
     } else {
-        printf("Sudah melebihi batas login, tidak bisa login lagi");
+        printf("\nUsername atau Password salah\n");
+        printf("\nSudah melebihi batas login, tidak bisa login lagi\n");
     }
 
 }
