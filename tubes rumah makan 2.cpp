@@ -1,15 +1,13 @@
 #include <conio.h>
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 #include <windows.h>
-#include<stdlib.h>
 
-main()
-{
-float total_harga, kembali, pembayaran, kurang;
-int pilih, banyak_pembelian;
-char menu;
-char username[8], pass[12];
-int repeat = 0, gagal = 0;
+
+int main(){
+   char username[8], pass[12];
+   int repeat = 0, gagal = 0;
 
    while(repeat < 3){
       printf("Masukkan Username : ");
@@ -31,7 +29,4 @@ int repeat = 0, gagal = 0;
    }
 
    system("pause");
-
-
-
-  
+}
