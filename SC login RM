@@ -1,37 +1,35 @@
 #include <conio.h>
 #include <stdio.h>
-#include <windows.h>
+#include <stdlib.h>
 #include <string.h>
+#include <windows.h>
 
-main()
-{
- float total_harga, kembali, pembayaran, kurang;
- int pilih, banyak_pembelian;
- char menu;
- char nama[10], pas[10];
-    int ulang = 0;
 
-    for(int i=0; i<3; i++){
-        printf(" \n           Silahkan login.\n");
-        printf("\n Masukkan username anda :");
-        scanf("%s", &nama);
+int main(){
+    printf("Selamat Datang di Rumah Makan Rasha\n");
+    printf("Silahkan Login Pegawai!\n");
+   char username[8], pass[12];
+   int repeat = 0, gagal = 0;
 
-        printf("\n Masukkan password anda : ");
-        scanf("%s", &pas);
+   while(repeat < 3){
+      printf("Masukkan Username : ");
+      scanf("%s", &username);
+      printf("Masukkan Password : ");
+      scanf("%s", &pass);
 
-        if ((strcmp(nama,"rasha")==0)&&(strcmp(pas,"lapar")==0)) {
-            break;
-        } else {
-            printf("Maaf password atau username anda salah\n");
-            ulang = ulang + 1;
-        }
-    }
+      if(strcmp(username,"Rasha")==0 && strcmp (pass,"lapar")== 0){
+         printf("Pegawai berhasil login\n");
+         break;
+      }else{
+         printf("Input Salah!\n");
+         gagal++;
+         if(gagal == 3){
+            printf("Input salah, Tunggu beberapa saat untuk login kembali!\n");
+         }
+      }
+      repeat++;
+   }
 
-    if(ulang<3){
-        printf("\n              Anda telah berhasil login.");
-    } else {
-        printf("\nUsername atau Password salah\n");
-        printf("\nSudah melebihi batas login, tidak bisa login lagi\n");
-    }
-
+   system("pause");
 }
+
