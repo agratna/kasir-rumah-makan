@@ -1,35 +1,80 @@
-#include <conio.h>
 #include <stdio.h>
-#include <stdlib.h>
 #include <string.h>
-#include <windows.h>
+#include <stdlib.h>
 
+struct{
+	char username[8];
+	char pass[12];
+}pegawai;
+
+struct tanggal {
+char data_pegawai;
+int bulan;
+int hari;
+int tahun;
+}tanggal;
 
 int main(){
-    printf("Selamat Datang di Rumah Makan Rasha\n");
-    printf("Silahkan Login Pegawai!\n");
-   char username[8], pass[12];
-   int repeat = 0, gagal = 0;
-
+	struct pegawai;
+	struct tanggal;
+	float total_harga, pembayaran, kurang;	
+    char username[8], pass[12], nama_pelanggan, jumlah_pelanggan, data_pegawai,pilih;
+	int repeat=0, gagal=0;
+	int bulan;
+    int hari;
+    int tahun;	
+    
+    awal:	
+	printf("\n                           SELAMAT DATANG DI MENU LOGIN MIE ANAK KOS          \n");
+	printf("\n                                  Jln.BY PASS NGURAH RAI                      \n");
+	printf("\n                                 Kantong Mahasiswa Friendly                   \n");
    while(repeat < 3){
-      printf("Masukkan Username : ");
-      scanf("%s", &username);
-      printf("Masukkan Password : ");
-      scanf("%s", &pass);
-
+	printf("\nMasukkan Username: ");
+	scanf("%s", &username);
+	printf("\nMasukkan password: ");
+	scanf("%s", &pass);
+	
       if(strcmp(username,"Rasha")==0 && strcmp (pass,"lapar")== 0){
-         printf("Pegawai berhasil login\n");
+         printf("\n    Pegawai berhasil login\n");
          break;
       }else{
-         printf("Input Salah!\n");
+         printf("\nInput Salah!\n");
          gagal++;
          if(gagal == 3){
-            printf("Input salah, Tunggu beberapa saat untuk login kembali!\n");
+            printf("\nInput salah, Tunggu beberapa saat untuk login kembali!\n");
          }
       }
       repeat++;
    }
 
    system("pause");
-}
+   
+   printf("\n\tREGISTRASI PELANGGAN\n");
+   
+   printf("Tanggal Kunjungan (dd-mm-yyyy):");
+   scanf("%d-%d-%d", 
+   &hari, 
+   &bulan,
+   &tahun);
+   printf("\n");
+   printf("Masukkan Nama Pelanggan: ");
+   scanf("%s", &nama_pelanggan);
+   printf("Masukkan Jumlah Pelanggan: ");
+   scanf("%s", &jumlah_pelanggan);
+   printf("Pilih Meja: \n");
+   printf("Meja no 1 	(khusus 2 orang)\n");
+   printf("Meja no 2 	(khusus 2 orang)\n");
+   printf("Meja no 3 	(khusus 3 orang)\n");
+   printf("Meja no 4 	(khusus 3 orang)\n");
+   printf("Meja no 5 	(khusus 4 orang)\n");
+   printf("Meja no 6 	(khusus 4 orang)\n");
+   printf("Meja no 7 	(khusus 5 orang)\n");
+   printf("Meja no 8 	(khusus 6 orang)\n");
+   printf("Meja no 9 	(khusus 7 orang)\n");
+   printf("Meja no 10	(khusus 8 orang)\n");
+   printf("Masukkan nomor meja yang diinginkan: ");
+   scanf("%d",&pilih);
+   
+   return 0;
+ }
 
