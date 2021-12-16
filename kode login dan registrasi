@@ -18,11 +18,11 @@ int main(){
 	struct pegawai;
 	struct tanggal;
 	float total_harga, pembayaran, kurang;	
-    char username[8], pass[12], nama_pelanggan, jumlah_pelanggan, data_pegawai,pilih;
+        char username[8], pass[12], nama_pelanggan, jumlah_pelanggan, data_pegawai,pilih;
 	int repeat=0, gagal=0;
 	int bulan;
-    int hari;
-    int tahun;	
+    	int hari;
+    	int tahun;	
     
     awal:	
 	printf("\n                           SELAMAT DATANG DI MENU LOGIN MIE ANAK KOS          \n");
