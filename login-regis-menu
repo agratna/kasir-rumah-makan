@@ -97,7 +97,7 @@ awal:
 
    system("pause");
 
-   printf("\n\tREGISTRASI PELANGGAN\n");
+   printf("\n\t\t\t\t\tREGISTRASI PELANGGAN\n\n");
 
    printf("Tanggal Kunjungan (dd-mm-yyyy):");
    scanf("%d-%d-%d",
