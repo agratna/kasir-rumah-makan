@@ -110,16 +110,16 @@ awal:
    printf("Masukkan Jumlah Pelanggan: ");
    scanf("%s", &jumlah_pelanggan);
    printf("Pilih Meja: \n");
-   printf("Meja no 1 	(khusus 2 orang)\n");
-   printf("Meja no 2 	(khusus 2 orang)\n");
-   printf("Meja no 3 	(khusus 3 orang)\n");
-   printf("Meja no 4 	(khusus 3 orang)\n");
-   printf("Meja no 5 	(khusus 4 orang)\n");
-   printf("Meja no 6 	(khusus 4 orang)\n");
-   printf("Meja no 7 	(khusus 5 orang)\n");
-   printf("Meja no 8 	(khusus 6 orang)\n");
-   printf("Meja no 9 	(khusus 7 orang)\n");
-   printf("Meja no 10	(khusus 8 orang)\n");
+   printf("Meja no 1 	\n");
+   printf("Meja no 2 	\n");
+   printf("Meja no 3 	\n");
+   printf("Meja no 4 	\n");
+   printf("Meja no 5 	\n");
+   printf("Meja no 6 	\n");
+   printf("Meja no 7 	\n");
+   printf("Meja no 8 	\n");
+   printf("Meja no 9 	\n");
+   printf("Meja no 10	\n");
    printf("Masukkan nomor meja yang diinginkan: ");
    scanf("%d",&pilih);
 
