@@ -73,9 +73,11 @@ int main(){
 	snack=0;
 
 awal:
-	printf("\n                           SELAMAT DATANG DI MENU LOGIN MIE ANAK KOS          \n");
-	printf("\n                                  Jln.BY PASS NGURAH RAI                      \n");
-	printf("\n                                 Kantong Mahasiswa Friendly                   \n");
+	printf("\n\t\t=================================================================================\n");
+	printf("\n\t\t+                       SELAMAT DATANG DI MENU LOGIN MIE ANAK KOS       \t+   \n");
+	printf("\n\t\t+                               Jln.BY PASS NGURAH RAI                  \t+    \n");
+	printf("\n\t\t+                             Kantong Mahasiswa Friendly                \t+   \n");
+	printf("\n\t\t=================================================================================\n");
    while(repeat < 3){
 	printf("\nMasukkan Username: ");
 	scanf("%s", &username);
@@ -97,7 +99,9 @@ awal:
 
    system("pause");
 
-   printf("\n\t\t\t\t\tREGISTRASI PELANGGAN\n\n");
+  printf("\n\t\t+=======================================================+\n");
+   printf("\t\t+               REGISTRASI PELANGGAN                 	+\n"); 
+   printf("\t\t+=======================================================+\n");
 
    printf("Tanggal Kunjungan (dd-mm-yyyy):");
    scanf("%d-%d-%d",
