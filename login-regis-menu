@@ -139,6 +139,7 @@ switch (pilih) {
 case 1:
 
 menu :
+printf("\tMakanan\n");
 printf("\n1. Mie Kuah Merah (23K)\n");
 printf("2. Mie Kuah Bulgogi (25K)\n");
 printf("3. Mie Kuah Lada Hitam (24K)\n");
@@ -246,7 +247,7 @@ if (1||2||3||4||5)
         }
 
     drink :
-
+    printf("\n\tMinuman\n");
     printf("\n1. Jus Buah\n");
     printf("2. Coffee\n");
     printf("3. Milk\n\n");
@@ -380,6 +381,7 @@ if (1||2||3||4||5)
     }
 
     snack :
+    	printf("\n\tCemilan\n");
         printf("\n1. Cireng 8pcs (10K)\t\t 4. Tokpoki (15K)\n");
         printf("2. Pisang Coklat (10K)\t\t 5. Takoyaki 4pcs (12K)\n");
         printf("3. Jamur Crispy (7K)\t\t 6. Roti Bakkar (10K)\n\n");
