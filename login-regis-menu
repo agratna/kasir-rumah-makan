@@ -128,6 +128,7 @@ awal:
 
 
 printf("\n\n NOTE !!! KEPADA PEMBELI HARAP MASUKAN PILIHAN SESUAI PILIHAN YANG ADA, JIKA TIDAK SESUAI PROGRAM AKAN EROR/BERHENTI\n\n");
+printf("\n\n\t\t\t\t\t\t MENU RUMAH MAKAN MIE ANAK KOST\n\n");
 printf("\n1.Makanan\n");
 printf("2.Minuman\n");
 printf("3.Cemilan\n\n");
