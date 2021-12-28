@@ -73,11 +73,9 @@ int main(){
 	snack=0;
 
 awal:
-	printf("\n\t\t=================================================================================\n");
-	printf("\n\t\t+                       SELAMAT DATANG DI MENU LOGIN MIE ANAK KOS       \t+   \n");
-	printf("\n\t\t+                               Jln.BY PASS NGURAH RAI                  \t+    \n");
-	printf("\n\t\t+                             Kantong Mahasiswa Friendly                \t+   \n");
-	printf("\n\t\t=================================================================================\n");
+	printf("\n                           SELAMAT DATANG DI MENU LOGIN MIE ANAK KOS          \n");
+	printf("\n                                  Jln.BY PASS NGURAH RAI                      \n");
+	printf("\n                                 Kantong Mahasiswa Friendly                   \n");
    while(repeat < 3){
 	printf("\nMasukkan Username: ");
 	scanf("%s", &username);
@@ -99,9 +97,7 @@ awal:
 
    system("pause");
 
-  printf("\n\t\t+=======================================================+\n");
-   printf("\t\t+               REGISTRASI PELANGGAN                 	+\n"); 
-   printf("\t\t+=======================================================+\n");
+   printf("\n\t\t\t\t\tREGISTRASI PELANGGAN\n\n");
 
    printf("Tanggal Kunjungan (dd-mm-yyyy):");
    scanf("%d-%d-%d",
@@ -131,25 +127,31 @@ awal:
 
 
 
-printf("\n\n NOTE !!! KEPADA PEMBELI HARAP MASUKAN PILIHAN SESUAI PILIHAN YANG ADA, JIKA TIDAK SESUAI PROGRAM AKAN EROR/BERHENTI\n\n");
-printf("\n\n\t\t\t\t\t\t MENU RUMAH MAKAN MIE ANAK KOST\n\n");
-printf("\n1.Makanan\n");
-printf("2.Minuman\n");
-printf("3.Cemilan\n\n");
-printf("Masukan Pilihan : ");
+printf("\n\n NOTE !!! HARAP MASUKAN PILIHAN SESUAI PILIHAN YANG ADA, JIKA TIDAK SESUAI PROGRAM AKAN EROR/BERHENTI\n\n");
+printf("\n\t\t+==========================================================================+\n");
+printf("\t\t+                     MENU RUMAH MAKAN MIE ANAK KOST                       +\n");                
+printf("\t\t+==========================================================================+\n");
+printf("\t\t+   				1.Makanan                                  +\n");
+printf("\t\t+   				2.Minuman                                  +\n");
+printf("\t\t+   				3.Cemilan                                  +\n");
+printf("\t\t+==========================================================================+\n");
+printf("\t\t Masukan Pilihan : ");
 scanf("%d",&pilih);
 
 switch (pilih) {
 case 1:
 
 menu :
-printf("\tMakanan\n");
-printf("\n1. Mie Kuah Merah (23K)\n");
-printf("2. Mie Kuah Bulgogi (25K)\n");
-printf("3. Mie Kuah Lada Hitam (24K)\n");
-printf("4. Mie Kuah Cheese (20K)\n");
-printf("5. Fire Ramen Jumbo (40K)\n\n");
-printf("Masukan Pilihan : ");
+printf("\n\t\t==========================================================================");
+printf("\t\t								   	Makanan\n							");
+printf("\n\t\t==========================================================================\n");
+printf("\t\t		1. Mie Kuah Merah (23K)									 \n");      					       		   
+printf("\t\t		2. Mie Kuah Bulgogi (25K)        						 \n");
+printf("\t\t		3. Mie Kuah Lada Hitam (24K)							 \n");
+printf("\t\t		4. Mie Kuah Cheese (20K)								 \n");
+printf("\t\t		5. Fire Ramen Jumbo (40K)								 \n");
+printf("\t\t==========================================================================\n");
+printf("\t\tMasukan Pilihan : ");
 scanf("%d",&makanan);
 
 if (makanan==1) {
@@ -168,18 +170,21 @@ else if (makanan==5) {
     makanan=hramen;
 }
 else if (makanan >5) {
-            printf("Tolong input sesuai pilihan\n\n");
+            printf("\t\tTolong input sesuai pilihan\n\n");
             goto menu;
         }
 if (1||2||3||4||5)
     {
     level :
-    printf("\nPilih Level Pedas\n");
-    printf("1. Level 0 Gratis (Tidak Pedas)\n");
-    printf("2. Level 1 (2K) (Pedas)\n");
-    printf("3. Level 2 (4K)(Sangat Pedas)\n");
-    printf("4. Level 3 (6K)(Sangat Sangat Pedas)\n\n");
-    printf("Masukan Pilihan : ");
+    printf("\n\t\t==========================================================================");
+    printf("\n\t				Pilih Level Pedas\n");
+    printf("\n\t\t==========================================================================\n");
+    printf("\t		1. Level 0 Gratis (Tidak Pedas)\n");
+    printf("\t		2. Level 1 (2K) (Pedas)\n");
+    printf("\t		3. Level 2 (4K)(Sangat Pedas)\n");
+    printf("\t		4. Level 3 (6K)(Sangat Sangat Pedas)");
+    printf("\n\t\t==========================================================================\n");
+    printf("\t\tMasukan Pilihan : ");
     scanf("%d",&level);
 
     if (level==1) {
@@ -195,18 +200,21 @@ if (1||2||3||4||5)
         level=hlevel3;
     }
     else if (level >4) {
-            printf("Tolong input sesuai pilihan\n\n");
+            printf("\t\tTolong input sesuai pilihan\n\n");
             goto level;
         }
 
     topping :
-    printf("\nPilih Topping\n");
-    printf("1. Ayam Panggang (10K)\n");
-    printf("2. Daging Sapi (12K)\n");
-    printf("3. Udang (8K) \n");
-    printf("4. Karage (8K) \n");
-    printf("5. Telur Dadar Special (7K) \n\n");
-    printf("Masukan Pilihan : ");
+    printf("\n\t\t==========================================================================");
+    printf("\n\t				Pilih Topping\n");
+    printf("\n\t\t==========================================================================\n");
+    printf("\t		1. Ayam Panggang (10K)\n");
+    printf("\t		2. Daging Sapi (12K)\n");
+    printf("\t		3. Udang (8K) \n");
+    printf("\t		4. Karage (8K) \n");
+    printf("\t		5. Telur Dadar Special (7K) ");
+    printf("\n\t\t==========================================================================\n");
+    printf("\t\tMasukan Pilihan : ");
     scanf("%d",&topping);
 
     if (topping==1) {
@@ -225,18 +233,18 @@ if (1||2||3||4||5)
         topping=htelur;
     }
     else if (topping >5) {
-            printf("Tolong input sesuai pilihan\n\n");
+            printf("\t\tTolong input sesuai pilihan\n\n");
             goto topping;
         }
 
     total=makanan+level+topping;
-    printf("Total : %d\n\n",total);
+    printf("\t\tTotal : %d\n\n",total);
 
     ulang2 :
-    printf("Ingin pesan minuman?\n");
-    printf("1. Ya\n");
-    printf("2. Tidak\n");
-    printf("Masukan Pilihan : ");
+    printf("\t\tIngin pesan minuman?\n");
+    printf("\t\t1. Ya\n");
+    printf("\t\t2. Tidak\n");
+    printf("\t\tMasukan Pilihan : ");
     scanf("%d",&ulang);
 
     if (ulang==1) {
@@ -246,46 +254,51 @@ if (1||2||3||4||5)
         goto hitung;
     }
     else if (ulang >2) {
-            printf("Tolong input sesuai pilihan\n\n");
+            printf("\t\tTolong input sesuai pilihan\n\n");
             goto ulang2;
         }
 
     drink :
-    printf("\n\tMinuman\n");
-    printf("\n1. Jus Buah\n");
-    printf("2. Coffee\n");
-    printf("3. Milk\n\n");
-    printf("Masukan Pilihan : ");
+    printf("\n\t\t==========================================================================");
+	printf("\n\t					Minuman\n");
+	printf("\n\t\t==========================================================================\n");
+    printf("\t		1. Jus Buah\n");
+    printf("\t		2. Coffee\n");
+    printf("\t		3. Milk\n");
+    printf("\t\t==========================================================================\n");
+    printf("\t\tMasukan Pilihan : ");
     scanf("%d",&drink);
 
 
     if (drink ==1) {
         jus :
-        printf("\nAll Price 12K\n\n");
-        printf("1. Jus Apel  \t\t 6.  Jus Tomat \n");
-        printf("2. Jus Mangga \t\t 7.  Jus Strawberry \n");
-        printf("3. Jus Sirsak \t\t 8.  Jus Jeruk \n");
-        printf("4. Jus Alpukat \t\t 9.  Jus Nanas \n");
-        printf("5. Jus Kiwi \t\t 10. Jus Anggur \n\n");
+        printf("\n\t\t==========================================================================");
+        printf("\n\t		All Price 12K\n\n");
+        printf("\t		1. Jus Apel  \t\t 6.  Jus Tomat \n");
+        printf("\t		2. Jus Mangga \t\t 7.  Jus Strawberry \n");
+        printf("\t		3. Jus Sirsak \t\t 8.  Jus Jeruk \n");
+        printf("\t		4. Jus Alpukat \t\t 9.  Jus Nanas \n");
+        printf("\t		5. Jus Kiwi \t\t 10. Jus Anggur \n");
+        printf("\t\t==========================================================================\n");
 
-        printf("Masukan Pilihan : ");
+        printf("\t\tMasukan Pilihan : ");
         scanf("%d",&jus);
 
     if (jus==1||2||3||4||5||7||8||9||10) {
         jus=hbuah;
     }
     else if (jus >10) {
-            printf("Tolong input sesuai pilihan\n\n");
+            printf("\t\tTolong input sesuai pilihan\n\n");
             goto jus;
         }
     total2=jus;
-    printf("\nTotal : %d\n\n",total2);
+    printf("\n\t\tTotal : %d\n\n",total2);
 
     ulang3:
-    printf("Ingin pesan cemilan?\n");
-    printf("1. Ya\n");
-    printf("2. Tidak\n");
-    printf("Masukan Pilihan : ");
+    printf("\t\tIngin pesan cemilan?\n");
+    printf("\t\t1. Ya\n");
+    printf("\t\t2. Tidak\n");
+    printf("\t\tMasukan Pilihan : ");
     scanf("%d",&ulang);
 
     if (ulang==1) {
@@ -295,18 +308,20 @@ if (1||2||3||4||5)
         goto hitung4;
     }
     else if (ulang >2) {
-            printf("Tolong input sesuai pilihan\n\n");
+            printf("\t\tTolong input sesuai pilihan\n\n");
             goto ulang3;
         }
     break;
 
     }
     if (drink==2) {
-        printf("\n1. Americano (25K) \t\t 5.  Cappucino (23K)\n");
-        printf("\n\t2. Avocado Coffee (20K) \t\t 6.  Caramel Latte (30K)\n");
-        printf("\n3. Cafe Latte (23K) \t\t 7.  Hazelnut Latte (30K)\n");
-        printf("\n\t4. Cafe Mocha Latte (27K) \t\t 8.  Vanilla Latte (27K)\n\n");
-        printf("Masukan Pilihan : ");
+    	printf("\n\t\t==========================================================================");
+        printf("\n\		1. Americano (25K) \t\t 5.  Cappucino (23K)\n");
+        printf("\n\t	2. Avocado Coffee (20K) \t 6.  Caramel Latte (30K)\n");
+        printf("\n		3. Cafe Latte (23K) \t\t 7.  Hazelnut Latte (30K)\n");
+        printf("\n\t	4. Cafe Mocha Latte (27K) \t 8.  Vanilla Latte (27K)\n\n");
+        printf("\n\t\t==========================================================================\n");
+        printf("\t\tMasukan Pilihan : ");
         scanf("%d",&coffee);
 
         if (coffee==1) {
@@ -335,12 +350,12 @@ if (1||2||3||4||5)
         }
 
         total3=coffee;
-    printf("\nTotal : %d\n\n",total3);
+    printf("\n\t\tTotal : %d\n\n",total3);
 
-    printf("Ingin pesan cemilan?\n");
-    printf("1. Ya\n");
-    printf("2. Tidak\n");
-    printf("Masukan Pilihan : ");
+    printf("\t\tIngin pesan cemilan?\n");
+    printf("\t\t1. Ya\n");
+    printf("\t\t2. Tidak\n");
+    printf("\t\tMasukan Pilihan : ");
     scanf("%d",&ulang);
 
     if (ulang==1) {
@@ -353,25 +368,27 @@ if (1||2||3||4||5)
 
     }
     if (drink==3) {
-        printf("\nAll Price 15K\n\n");
-        printf("1. Milky Strawberry\n");
-        printf("2. Milky Hazelnut\n");
-        printf("3. Milky Irish\n");
-        printf("4. Milky Original\n");
-        printf("5. Milky Vanila\n\n");
-        printf("Masukan Pilihan : ");
+    	printf("\n\t\t==========================================================================");
+        printf("\n\t		All Price 15K\n\n");
+        printf("\t	1. Milky Strawberry\n");
+        printf("\t	2. Milky Hazelnut\n");
+        printf("\t	3. Milky Irish\n");
+        printf("\t	4. Milky Original\n");
+        printf("\t	5. Milky Vanila");
+        printf("\n\t\t==========================================================================\n");
+        printf("\t\tMasukan Pilihan : ");
         scanf("%d",&milk);
 
     if (1||2||3||4||5||6) {
         milk=hmilk;
     }
     total4=milk;
-    printf("\nTotal : %d \n\n",total4);
+    printf("\n\t\tTotal : %d \n\n",total4);
 
-    printf("Ingin pesan cemilan?\n");
-    printf("1. Ya\n");
-    printf("2. Tidak\n");
-    printf("Masukan Pilihan : ");
+    printf("\t\tIngin pesan cemilan?\n");
+    printf("\t\t1. Ya\n");
+    printf("\t\t2. Tidak\n");
+    printf("\t\tMasukan Pilihan : ");
     scanf("%d",&ulang);
 
     if (ulang==1) {
@@ -385,11 +402,14 @@ if (1||2||3||4||5)
     }
 
     snack :
-    	printf("\n\tCemilan\n");
-        printf("\n1. Cireng 8pcs (10K)\t\t 4. Tokpoki (15K)\n");
-        printf("2. Pisang Coklat (10K)\t\t 5. Takoyaki 4pcs (12K)\n");
-        printf("3. Jamur Crispy (7K)\t\t 6. Roti Bakkar (10K)\n\n");
-        printf("Masukan Pilihan : ");
+    	printf("\n\t\t==========================================================================");
+    	printf("\n\t			        	Cemilan\n");
+    	printf("\n\t\t==========================================================================");
+        printf("\n			1. Cireng 8pcs (10K)\t\t 4. Tokpoki (15K)\n");
+        printf("			2. Pisang Coklat (10K)\t\t 5. Takoyaki 4pcs (12K)\n");
+        printf("			3. Jamur Crispy (7K)\t\t 6. Roti Bakkar (10K)");
+        printf("\n\t\t==========================================================================\n");
+        printf("\t\tMasukan Pilihan : ");
         scanf("%d",&cemilan);
 
         if (cemilan==1) {
@@ -411,7 +431,7 @@ if (1||2||3||4||5)
         cemilan=hsepuluh;
      }
         total5=cemilan;
-    printf("\nTotal : %d \n\n",total5);
+    printf("\n\t\tTotal : %d \n\n",total5);
 
     if (drink==3){
     goto hitung3;
@@ -426,34 +446,36 @@ if (1||2||3||4||5)
     }
 case 2 :
     minuman :
-
-    printf("\n1. Jus Buah\n");
-    printf("2. Coffee\n");
-    printf("3. Milk\n\n");
-    printf("Masukan Pilihan : ");
+	printf("\n\t\t==========================================================================");
+    printf("\n\t		1. Jus Buah\n");
+    printf("\t		2. Coffee\n");
+    printf("\t		3. Milk");
+    printf("\n\t\t==========================================================================\n");
+    printf("\t\tMasukan Pilihan : ");
     scanf("%d",&minuman);
 
     if (minuman ==1) {
-        printf("\nAll Price 12K\n\n");
-        printf("1. Jus Apel  \t\t 6.  Jus Tomat \n");
-        printf("2. Jus Mangga \t\t 7.  Jus Strawberry \n");
-        printf("3. Jus Sirsak \t\t 8.  Jus Jeruk \n");
-        printf("4. Jus Alpukat \t\t 9.  Jus Nanas \n");
-        printf("5. Jus Kiwi \t\t 10. Jus Anggur \n\n");
-
-        printf("Masukan Pilihan : ");
+    	printf("\n\t\t==========================================================================");
+        printf("\n\t		All Price 12K\n\n");
+        printf("\t		1. Jus Apel  \t\t 6.  Jus Tomat \n");
+        printf("\t		2. Jus Mangga \t\t 7.  Jus Strawberry \n");
+        printf("\t		3. Jus Sirsak \t\t 8.  Jus Jeruk \n");
+        printf("\t		4. Jus Alpukat \t\t 9.  Jus Nanas \n");
+        printf("\t		5. Jus Kiwi \t\t 10. Jus Anggur ");
+        printf("\n\t\t==========================================================================\n");
+        printf("\t\tMasukan Pilihan : ");
         scanf("%d",&jus);
 
     if (jus==1||2||3||4||5||7||8||9||10) {
         jus=hbuah;
     }
     total2=jus;
-    printf("\nTotal : %d\n\n",total2);
+    printf("\n\t\tTotal : %d\n\n",total2);
 
-    printf("Ingin pesan cemilan?\n");
-    printf("1. Ya\n");
-    printf("2. Tidak\n");
-    printf("Masukan Pilihan : ");
+    printf("\t\tIngin pesan cemilan?\n");
+    printf("\t\t1. Ya\n");
+    printf("\t\t2. Tidak\n");
+    printf("\t\tMasukan Pilihan : ");
     scanf("%d",&ulang);
 
     if (ulang==1) {
@@ -494,11 +516,13 @@ case 2 :
 
     }
     if (minuman==2) {
-        printf("\n1. Americano (25K) 		\t 5.  Cappucino (23K)\n");
-        printf("\n2. Avocado Coffee (20K) 	\t 6.  Caramel Latte (30K)\n");
-        printf("\n3. Cafe Latte (23K) 		\t 7.  Hazelnut Latte (30K)\n");
-        printf("\n4. Cafe Mocha Latte (27K)	\t 8.  Vanilla Latte (27K)\n\n");
-        printf("Masukan Pilihan : ");
+    	printf("\n\t\t==========================================================================");
+        printf("\n\t	1. Americano (25K) 		\t 5.  Cappucino (23K)\n");
+        printf("\n\t	2. Avocado Coffee (20K) 	\t 6.  Caramel Latte (30K)\n");
+        printf("\n\t	3. Cafe Latte (23K) 		\t 7.  Hazelnut Latte (30K)\n");
+        printf("\n\t	4. Cafe Mocha Latte (27K)	\t 8.  Vanilla Latte (27K)");
+        printf("\n\t\t==========================================================================\n");
+        printf("\t\tMasukan Pilihan : ");
         scanf("%d",&coffee);
 
         if (coffee==1) {
@@ -527,12 +551,12 @@ case 2 :
         }
 
         total3=coffee;
-    printf("\nTotal : %d\n\n",total3);
+    printf("\n\t\tTotal : %d\n\n",total3);
 
-    printf("Ingin pesan cemilan?\n");
-    printf("1. Ya\n");
-    printf("2. Tidak\n");
-    printf("Masukan Pilihan : ");
+    printf("\t\tIngin pesan cemilan?\n");
+    printf("\t\t1. Ya\n");
+    printf("\t\t2. Tidak\n");
+    printf("\t\tMasukan Pilihan : ");
     scanf("%d",&ulang);
 
     if (ulang==1) {
@@ -573,25 +597,27 @@ case 2 :
 
     }
     if (minuman==3) {
-        printf("\nAll Price 15K\n\n");
-        printf("1. Milky Strawberry\n");
-        printf("2. Milky Hazelnut\n");
-        printf("3. Milky Irish\n");
-        printf("4. Milky Original\n");
-        printf("5. Milky Vanila\n\n");
-        printf("Masukan Pilihan : ");
+    	printf("\n\t\t==========================================================================");
+        printf("\n\t	All Price 15K\n\n");
+        printf("\t	1. Milky Strawberry\n");
+        printf("\t	2. Milky Hazelnut\n");
+        printf("\t	3. Milky Irish\n");
+        printf("\t	4. Milky Original\n");
+        printf("\t	5. Milky Vanila");
+        printf("\n\t\t==========================================================================\n");
+        printf("\t\tMasukan Pilihan : ");
         scanf("%d",&milk);
 
     if (1||2||3||4||5||6) {
         milk=hmilk;
     }
     total4=milk;
-    printf("\nTotal : %d \n\n",total4);
+    printf("\n\t\tTotal : %d \n\n",total4);
 
-    printf("Ingin pesan cemilan?\n");
-    printf("1. Ya\n");
-    printf("2. Tidak\n");
-    printf("Masukan Pilihan : ");
+    printf("\t\tIngin pesan cemilan?\n");
+    printf("\t\t1. Ya\n");
+    printf("\t\t2. Tidak\n");
+    printf("\t\tMasukan Pilihan : ");
     scanf("%d",&ulang);
 
     if (ulang==1) {
@@ -630,10 +656,12 @@ case 2 :
         }
 
         cemil :
-        printf("\n1. Cireng 8pcs (10K)\t\t 4. Tokpoki (15K)\n");
-        printf("2. Pisang Coklat (10K)\t\t 5. Takoyaki 4pcs (12K)\n");
-        printf("3. Jamur Crispy (7K)\t\t 6. Roti Bakkar (10K)\n\n");
-        printf("Masukan Pilihan : ");
+        printf("\n\t\t==========================================================================\n");
+        printf("\t	1. Cireng 8pcs (10K)\t\t 4. Tokpoki (15K)\n");
+        printf("\t	2. Pisang Coklat (10K)\t\t 5. Takoyaki 4pcs (12K)\n");
+        printf("\t	3. Jamur Crispy (7K)\t\t 6. Roti Bakkar (10K)");
+        printf("\n\t\t==========================================================================\n");
+        printf("\t\tMasukan Pilihan : ");
         scanf("%d",&cemilan);
 
      if (cemilan==1) {
@@ -655,7 +683,7 @@ case 2 :
         cemilan=hsepuluh;
      }
         total5=cemilan;
-    printf("\nTotal : %d \n\n",total5);
+    printf("\n\t\tTotal : %d \n\n",total5);
 
     if (minuman==3) {
         goto hitung8;
@@ -673,10 +701,12 @@ case 2 :
     }
 case 3 :
     cemilan :
-        printf("\n1. Cireng 8pcs (10K)\t\t 4. Tokpoki (15K)\n");
-        printf("2. Pisang Coklat (10K)\t\t 5. Takoyaki 4pcs (12K)\n");
-        printf("3. Jamur Crispy (7K)\t\t 6. Roti Bakkar (10K)\n\n");
-        printf("Masukan Pilihan : ");
+    	printf("\n\t\t==========================================================================\n");
+        printf("\t	1. Cireng 8pcs (10K)\t\t 4. Tokpoki (15K)\n");
+        printf("\t	2. Pisang Coklat (10K)\t\t 5. Takoyaki 4pcs (12K)\n");
+        printf("\t	3. Jamur Crispy (7K)\t\t 6. Roti Bakkar (10K)");
+        printf("\n\t\t==========================================================================\n");
+        printf("\t\tMasukan Pilihan : ");
         scanf("%d",&cemilan);
 
      if (cemilan==1) {
@@ -698,7 +728,7 @@ case 3 :
         cemilan=hsepuluh;
      }
         total5=cemilan;
-    printf("\nTotal : %d \n\n",total5);
+    printf("\n\t\tTotal : %d \n\n",total5);
 
     bayarcemilan :
         printf("Uang yang dibayar : ");
