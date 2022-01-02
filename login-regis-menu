@@ -801,8 +801,10 @@ case 3 :
      }
         total5=cemilan;
     printf("\n\t\tTotal : %d \n\n",total5);
-
+    
     bayarcemilan :
+    	printf("\nPesanan anda\n\n");
+    	printf("Cemilan : %d\n\n",total5);
         printf("Uang yang dibayar : ");
         scanf("%d",&bayar);
         if (bayar<total5) {
@@ -813,6 +815,18 @@ case 3 :
         kembali=bayar-total5;
         printf("Kembali : %d\n\n",kembali);
         printf("Terima kasih atas kunjungannya\n\n");
+
+    	fprintf(kasir,"\nPesanan anda\n\n");
+    	fprintf(kasir,"Cemilan : %d\n\n",total5);
+        fprintf(kasir,"Uang yang dibayar : %d\n",bayar);
+        if (bayar<total5) {
+            fprintf(kasir,"\nUang Anda Kurang\n");
+            goto bayarcemilan;
+        }
+        else {}
+        kembali=bayar-total5;
+        fprintf(kasir,"Kembali : %d\n\n",kembali);
+        fprintf(kasir,"Terima kasih atas kunjungannya\n\n");
 
         printf("Apa anda ingin pesan lagi?\n");
         printf("1. Ya\n");
@@ -845,6 +859,21 @@ hitung :
         printf("Kembali : %d\n\n",kembali);
         printf("Terima kasih atas kunjungannya\n\n");
 
+
+    fprintf(kasir,"\nPesanan anda\n\n");
+    fprintf(kasir,"Makanan : %d\n\n",total);
+
+   
+        fprintf(kasir,"Uang yang dibayar : %d\n",bayar);
+        if (bayar<total) {
+            fprintf(kasir,"\nUang Anda Kurang\n");
+            goto bayarmakanan;
+        }
+        else {}
+        kembali=bayar-total;
+        fprintf(kasir,"Kembali : %d\n\n",kembali);
+        fprintf(kasir,"Terima kasih atas kunjungannya\n\n");
+
         printf("Apa anda ingin pesan lagi?\n");
         printf("1. Ya\n");
         printf("2. Tidak\n");
@@ -857,7 +886,7 @@ hitung :
         return 0;
         }
         return 0;
-
+        
 hitung2 :
     printf("\nPesanan anda\n\n");
     printf("Makanan      : %d\n",total);
@@ -877,6 +906,24 @@ hitung2 :
         printf("Kembali : %d\n\n",kembali);
         printf("Terima kasih atas kunjungannya\n\n");
 
+
+    fprintf(kasir,"\nPesanan anda\n\n");
+    fprintf(kasir,"Makanan      : %d\n",total);
+    fprintf(kasir,"Minuman Milk : %d\n\n",total4);
+    totalbayar=total+total4;
+    fprintf(kasir,"Total Pembayaran : %d\n",totalbayar);
+
+  
+        fprintf(kasir,"Uang yang dibayar : %d\n",bayar);
+        if (bayar<totalbayar) {
+            fprintf,(kasir,"\nUang Anda Kurang\n");
+            goto bayar2;
+        }
+        else {}
+        kembali=bayar-totalbayar;
+        fprintf(kasir,"Kembali : %d\n\n",kembali);
+        fprintf(kasir,"Terima kasih atas kunjungannya\n\n");
+
         printf("Apa anda ingin pesan lagi?\n");
         printf("1. Ya\n");
         printf("2. Tidak\n");
@@ -889,7 +936,7 @@ hitung2 :
         return 0;
         }
         return 0;
-
+        
     hitung3 :
     printf("\nPesanan anda\n\n");
     printf("Makanan      : %d\n",total);
@@ -910,6 +957,25 @@ hitung2 :
         printf("Kembali : %d\n\n",kembali);
         printf("Terima kasih atas kunjungannya\n\n");
 
+
+    fprintf(kasir,"\nPesanan anda\n\n");
+    fprintf(kasir,"Makanan      : %d\n",total);
+    fprintf(kasir,"Minuman Milk : %d\n",total4);
+    fprintf(kasir,"Cemilan      : %d\n\n",total5);
+    bayartotal=total+total4+total5;
+    fprintf(kasir,"Total Pembayaran : %d\n",bayartotal);
+
+  
+        fprintf(kasir,"Uang yang dibayar : %d\n",bayar);
+        if (bayar<bayartotal) {
+            fprintf(kasir,"\nUang Anda Kurang\n");
+            goto bayar3;
+        }
+        else {}
+        kembali=bayar-bayartotal;
+        fprintf(kasir,"Kembali : %d\n\n",kembali);
+        fprintf(kasir,"Terima kasih atas kunjungannya\n\n");
+
         printf("Apa anda ingin pesan lagi?\n");
         printf("1. Ya\n");
         printf("2. Tidak\n");
@@ -922,7 +988,7 @@ hitung2 :
         return 0;
         }
         return 0;
-
+        
         hitung4 :
     printf("\nPesanan anda\n\n");
     printf("Makanan     : %d\n",total);
@@ -942,6 +1008,23 @@ hitung2 :
         printf("Kembali : %d\n\n",kembali);
         printf("Terima kasih atas kunjungannya\n\n");
 
+    fprintf(kasir,"\nPesanan anda\n\n");
+    fprintf(kasir,"Makanan     : %d\n",total);
+    fprintf(kasir,"Minuman Jus : %d\n\n",total2);
+    bayarsay=total+total2;
+    fprintf(kasir,"Total Pembayaran : %d\n", bayarsay);
+
+        fprintf(kasir,"Uang yang dibayar : %d\n",bayar);
+        scanf("%d",&bayar);
+        if (bayar<bayarsay) {
+            fprintf(kasir,"\nUang Anda Kurang\n");
+            goto bayar4;
+        }
+        else {}
+        kembali=bayar-bayarsay;
+        fprintf(kasir,"Kembali : %d\n\n",kembali);
+        fprintf(kasir,"Terima kasih atas kunjungannya\n\n");
+
         printf("Apa anda ingin pesan lagi?\n");
         printf("1. Ya\n");
         printf("2. Tidak\n");
@@ -954,8 +1037,8 @@ hitung2 :
         return 0;
         }
         return 0;
-
-         hitung5 :
+        
+        hitung5 :
     printf("\nPesanan anda\n\n");
     printf("Makanan     : %d\n",total);
     printf("Minuman Jus : %d\n",total2);
@@ -975,6 +1058,27 @@ hitung2 :
         printf("Kembali : %d\n\n",kembali);
         printf("Terima kasih atas kunjungannya\n\n");
 
+
+      
+    fprintf(kasir,"\nPesanan anda\n\n");
+    fprintf(kasir,"Makanan     : %d\n",total);
+    fprintf(kasir,"Minuman Jus : %d\n",total2);
+    fprintf(kasir,"Cemilan     : %d\n\n",total5);
+    bayarwe=total+total2+total5;
+    fprintf(kasir,"Total Pembayaran : %d\n",bayarwe);
+
+   
+        fprintf(kasir,"Uang yang dibayar : %d\n",bayar);
+        scanf("%d",&bayar);
+        if (bayar<bayarwe) {
+            fprintf(kasir,"\nUang Anda Kurang\n");
+            goto bayar5;
+        }
+        else {}
+        kembali=bayar-bayarwe;
+        fprintf(kasir,"Kembali : %d\n\n",kembali);
+        fprintf(kasir,"Terima kasih atas kunjungannya\n\n");
+
         printf("Apa anda ingin pesan lagi?\n");
         printf("1. Ya\n");
         printf("2. Tidak\n");
@@ -987,7 +1091,7 @@ hitung2 :
         return 0;
         }
         return 0;
-
+        
     hitung6 :
 
     printf("\nPesanan anda\n\n");
@@ -1008,6 +1112,25 @@ hitung2 :
         printf("Kembali : %d\n\n",kembali);
         printf("Terima kasih atas kunjungannya\n\n");
 
+
+
+    fprintf(kasir,"\nPesanan anda\n\n");
+    fprintf(kasir,"Makanan        : %d\n",total);
+    fprintf(kasir,"Minuman Coffee : %d\n\n",total3);
+    bayarwoy=total+total3;
+    fprintf(kasir,"Total Pembayaran : %d\n",bayarwoy);
+
+    
+        fprintf(kasir,"Uang yang dibayar : %d\n",bayar);
+        if (bayar<bayarwoy) {
+            fprintf(kasir,"\nUang Anda Kurang\n");
+            goto bayar6;
+        }
+        else {}
+        kembali=bayar-bayarwoy;
+        fprintf(kasir,"Kembali : %d\n\n",kembali);
+        fprintf(kasir,"Terima kasih atas kunjungannya\n\n");
+
         printf("Apa anda ingin pesan lagi?\n");
         printf("1. Ya\n");
         printf("2. Tidak\n");
@@ -1020,8 +1143,8 @@ hitung2 :
         return 0;
         }
         return 0;
-
-        hitung7 :
+        
+         hitung7 :
     printf("\nPesanan anda\n\n");
     printf("Makanan        : %d\n",total);
     printf("Minuman Coffee : %d\n",total3);
@@ -1041,6 +1164,24 @@ hitung2 :
         printf("Kembali : %d\n\n",kembali);
         printf("Terima kasih atas kunjungannya\n\n");
 
+    fprintf(kasir,"\nPesanan anda\n\n");
+    fprintf(kasir,"Makanan        : %d\n",total);
+    fprintf(kasir,"Minuman Coffee : %d\n",total3);
+    fprintf(kasir,"Cemilan        : %d\n\n",total5);
+    bayarhey=total+total3+total5;
+    fprintf(kasir,"Total Pembayaran : %d\n",bayarhey);
+
+   
+        fprintf(kasir,"Uang yang dibayar : %d\n",bayar);
+        if (bayar<bayarhey) {
+            fprintf(kasir,"\nUang Anda Kurang\n");
+            goto bayar7;
+        }
+        else {}
+        kembali=bayar-bayarhey;
+        fprintf(kasir,"Kembali : %d\n\n",kembali);
+        fprintf(kasir,"Terima kasih atas kunjungannya\n\n");
+
         printf("Apa anda ingin pesan lagi?\n");
         printf("1. Ya\n");
         printf("2. Tidak\n");
@@ -1053,7 +1194,7 @@ hitung2 :
         return 0;
         }
         return 0;
-
+        
     hitung8 :
     printf("\nPesanan anda\n\n");
     printf("Minuman Milk : %d\n",total4);
@@ -1073,6 +1214,25 @@ hitung2 :
         printf("Kembali : %d\n\n",kembali);
         printf("Terima kasih atas kunjungannya\n\n");
 
+
+
+    fprintf(kasir,"\nPesanan anda\n\n");
+    fprintf(kasir,"Minuman Milk : %d\n",total4);
+    fprintf(kasir,"Cemilan : %d\n\n",total5);
+    bayardong=total4+total5;
+    fprintf(kasir,"Total Pembayaran : %d\n",bayardong);
+
+  
+        fprintf(kasir,"Uang yang dibayar : %d\n",bayar);
+        if (bayar<bayardong) {
+            fprintf(kasir,"\nUang Anda Kurang\n");
+            goto bayar8;
+        }
+        else {}
+        kembali=bayar-bayardong;
+        fprintf(kasir,"Kembali : %d\n\n",kembali);
+        fprintf(kasir,"Terima kasih atas kunjungannya\n\n");
+
         printf("Apa anda ingin pesan lagi?\n");
         printf("1. Ya\n");
         printf("2. Tidak\n");
@@ -1085,7 +1245,7 @@ hitung2 :
         return 0;
         }
         return 0;
-
+        
     hitung9 :
     printf("\nPesanan anda\n\n");
     printf("Minuman Coffee : %d\n",total3);
@@ -1105,6 +1265,24 @@ hitung2 :
         printf("Kembali : %d\n\n",kembali);
         printf("Terima kasih atas kunjungannya\n\n");
 
+
+    fprintf(kasir,"\nPesanan anda\n\n");
+    fprintf(kasir,"Minuman Coffee : %d\n",total3);
+    fprintf(kasir,"Cemilan : %d\n\n",total5);
+    bayarya=total3+total5;
+    fprintf(kasir,"Total Pembayaran : %d\n",bayarya);
+
+   
+        fprintf(kasir,"Uang yang dibayar : %d\n",bayar);
+        if (bayar<bayarya) {
+            fprintf(kasir,"\nTolong bayar sesuai/melebihi total\n");
+            goto bayar9;
+        }
+        else {}
+        kembali=bayar-bayarya;
+        fprintf(kasir,"Kembali : %d\n\n",kembali);
+        fprintf(kasir,"Terima kasih atas kunjungannya\n\n");
+
         printf("Apa anda ingin pesan lagi?\n");
         printf("1. Ya\n");
         printf("2. Tidak\n");
@@ -1117,7 +1295,7 @@ hitung2 :
         return 0;
         }
         return 0;
-
+        
     hitung10 :
     printf("\nPesanan anda\n\n");
     printf("Minuman Jus : %d\n",total2);
@@ -1132,10 +1310,28 @@ hitung2 :
             printf("\nUang Anda Kurang\n");
             goto bayar10;
         }
-        else {}
+        else {
         kembali=bayar-bayarplis;
         printf("Kembali : %d\n\n",kembali);
-        printf("Terima kasih atas kunjungannya\n\n");
+        printf("Terima kasih atas kunjungannya\n\n");}
+
+    
+    fprintf(kasir,"\nPesanan anda\n\n");
+    fprintf(kasir,"Minuman Jus : %d\n",total2);
+    fprintf(kasir,"Cemilan : %d\n\n",total5);
+    bayarplis=total2+total5;
+    fprintf(kasir,"Total Pembayaran : %d\n",bayarplis);
+
+
+        fprintf(kasir,"Uang yang dibayar : %d\n",bayar);
+        if (bayar<bayarplis) {
+            fprintf(kasir,"\nUang Anda Kurang\n");
+            goto bayar10;
+        }
+        else {
+        kembali=bayar-bayarplis;
+        fprintf(kasir,"Kembali : %d\n\n",kembali);
+        fprintf(kasir,"Terima kasih atas kunjungannya\n\n");}
 
         printf("Apa anda ingin pesan lagi?\n");
         printf("1. Ya\n");
@@ -1148,5 +1344,7 @@ hitung2 :
         else if (ulang==2) {
         return 0;
         }
-        return 0;
-}
+        
+        fclose(kasir);
+        return 0;  
+    }
