@@ -1,80 +1,130 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include <time.h>
 
 struct{
 	char username[8];
 	char pass[12];
 }pegawai;
 
-struct tanggal {
-char data_pegawai;
-int bulan;
-int hari;
-int tahun;
-}tanggal;
+
 
 int main(){
 	struct pegawai;
-	struct tanggal;
-	float total_harga, pembayaran, kurang;	
-        char username[8], pass[12], nama_pelanggan, jumlah_pelanggan, data_pegawai,pilih;
+	float total_harga, pembayaran, kurang;
+    	char username[8], pass[12], nama_pelanggan, jumlah_pelanggan, data_pegawai;
 	int repeat=0, gagal=0;
-	int bulan;
-    	int hari;
-    	int tahun;	
-    
-    awal:	
-	printf("\n                           SELAMAT DATANG DI MENU LOGIN MIE ANAK KOS          \n");
-	printf("\n                                  Jln.BY PASS NGURAH RAI                      \n");
-	printf("\n                                 Kantong Mahasiswa Friendly                   \n");
-   while(repeat < 3){
-	printf("\nMasukkan Username: ");
-	scanf("%s", &username);
-	printf("\nMasukkan password: ");
-	scanf("%s", &pass);
 	
+	time_t rawtime;
+	struct tm * timeinfo;
+	
+	time ( &rawtime );
+	timeinfo = localtime ( &rawtime );
+    	system("color 0b");
+	int hitung10,bayar10,bayarplis,hitung9,bayar9,bayarya,hitung8,bayar8,bayardong,
+	hitung7,bayar7,bayarhey,hitung6,bayar6,bayarwoy,hitung4,bayar4,bayarsay,hitung5,
+	bayarwe,bayar5,total6,hitung3,bayar3,bayartotal,drink,snack,totalbayar,bayar2,awal,
+	ulang5,ulang4,ulang3,ulang2,ulang,hpiscok,hsepuluh,hjamur,htokpoki,htakoyaki,bayarcemilan,
+	total5,bayarmakanan,bayarmilk,bayarjus,bayarcoffee,havocado,hcafelatte,hmocha,hcappucino,
+	hcaramel,hhazelnut,hvanilla,total4,total2,htomat,hbuah,total3,milk,coffee,jus,cemilan,
+	minuman,pilih,makanan,level,topping,hmilk,hamericano,hmerah,hbulgogi,hladahtm,hcheese,hramen,
+	hlevel0,hlevel1,hlevel2,hlevel3,hayam,hsapi,hudang,hkarage,htelur,htanpa,menu,beli,total,lanjut,bayar,kembali;
+	hpiscok=10000;
+	hsepuluh=10000;
+	hjamur=7000;
+	htokpoki=15000;
+	htakoyaki=12000;
+	havocado=20000;
+	hcafelatte=23000;
+	hmocha=27000;
+	hcappucino=23000;
+	hcaramel=30000;
+	hhazelnut=30000;
+	hvanilla=27000;
+	hbuah=12000;
+	htomat=10000;
+	hmilk=15000;
+	hamericano=25000;
+	hmerah=23000;
+	hbulgogi=25000;
+	hladahtm=24000;
+	hcheese=20000;
+	hramen=40000;
+	hlevel0=0;
+	hlevel1=2000;
+	hlevel2=4000;
+	hlevel3=6000;
+	hayam=10000;
+	hsapi=12000;
+	hudang=8000;
+	hkarage=8000;
+	htelur=7000;
+	htanpa=0;
+	makanan=0;
+	level=0;
+	topping=0;
+	jus=0;
+	coffee=0;
+	milk=0;
+	cemilan=0;
+	drink=0;
+	snack=0;
+
+
+awal:
+	printf("\n\t\t=================================================================================\n");
+	printf("\n\t\t+                       SELAMAT DATANG DI MENU LOGIN MIE ANAK KOS       \t+   \n");
+	printf("\n\t\t+                               Jln.BY PASS NGURAH RAI                  \t+    \n");
+	printf("\n\t\t+                             Kantong Mahasiswa Friendly                \t+   \n");
+	printf("\n\t\t=================================================================================\n");
+   while(repeat < 3){
+	printf("\n\t\tMasukkan Username: ");
+	scanf("%s", &username);
+	printf("\n\t\tMasukkan password: ");
+	scanf("%s", &pass);
+
       if(strcmp(username,"Rasha")==0 && strcmp (pass,"lapar")== 0){
-         printf("\n    Pegawai berhasil login\n");
+         printf("\n\n\t\tPegawai berhasil login\n");
          break;
       }else{
-         printf("\nInput Salah!\n");
+         printf("\n\n\t\tInput Salah!\n\n");
          gagal++;
          if(gagal == 3){
-            printf("\nInput salah, Tunggu beberapa saat untuk login kembali!\n");
+            printf("\n\n\t\tInput salah, Tunggu beberapa saat untuk login kembali!\n");
          }
       }
       repeat++;
    }
 
-   system("pause");
+
+
+system("pause");
+
+   printf("\n\t\t+=======================================================+\n");
+   printf("\t\t+               REGISTRASI PELANGGAN                 	+\n"); 
+   printf("\t\t+=======================================================+\n");
+   printf("\n\t\tTanggal Kunjungan : %s", asctime (timeinfo));
    
-   printf("\n\tREGISTRASI PELANGGAN\n");
-   
-   printf("Tanggal Kunjungan (dd-mm-yyyy):");
-   scanf("%d-%d-%d", 
-   &hari, 
-   &bulan,
-   &tahun);
    printf("\n");
-   printf("Masukkan Nama Pelanggan: ");
-   scanf("%s", &nama_pelanggan);
-   printf("Masukkan Jumlah Pelanggan: ");
-   scanf("%s", &jumlah_pelanggan);
-   printf("Pilih Meja: \n");
-   printf("Meja no 1 	(khusus 2 orang)\n");
-   printf("Meja no 2 	(khusus 2 orang)\n");
-   printf("Meja no 3 	(khusus 3 orang)\n");
-   printf("Meja no 4 	(khusus 3 orang)\n");
-   printf("Meja no 5 	(khusus 4 orang)\n");
-   printf("Meja no 6 	(khusus 4 orang)\n");
-   printf("Meja no 7 	(khusus 5 orang)\n");
-   printf("Meja no 8 	(khusus 6 orang)\n");
-   printf("Meja no 9 	(khusus 7 orang)\n");
-   printf("Meja no 10	(khusus 8 orang)\n");
-   printf("Masukkan nomor meja yang diinginkan: ");
-   scanf("%d",&pilih);
+   printf("\n\t\tMasukkan Nama Pelanggan: ");
+   scanf("%s",&nama_pelanggan);
+   printf("\n\t\tMasukkan Jumlah Pelanggan: ");
+   scanf("%s",&jumlah_pelanggan);
+   printf("\n\t\tPilih Meja: \n");
+   printf("\t\tMeja no 1 	\n");
+   printf("\t\tMeja no 2 	\n");
+   printf("\t\tMeja no 3 	\n");
+   printf("\t\tMeja no 4 	\n");
+   printf("\t\tMeja no 5 	\n");
+   printf("\t\tMeja no 6 	\n");
+   printf("\t\tMeja no 7 	\n");
+   printf("\t\tMeja no 8 	\n");
+   printf("\t\tMeja no 9 	\n");
+   printf("\t\tMeja no 10	\n");
+   printf("\t\tMasukkan nomor meja yang diinginkan: ");
+   scanf("%d",&pilih); 
    
    return 0;
- }
+   }
 
